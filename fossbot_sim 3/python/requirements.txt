@@ -1,0 +1,17 @@
+## Server
+flask>=3.0
+flask-socketio>=5.3
+eventlet>=0.36
+
+## Client / Gym
+python-socketio[client]>=5.10
+gymnasium>=0.29
+numpy>=1.24
+
+## RL
+stable-baselines3>=2.2
+torch>=2.0
+tensorboard>=2.14
+
+## Scenario parsing
+pyyaml>=6.0

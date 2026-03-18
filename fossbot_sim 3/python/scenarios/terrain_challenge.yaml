@@ -1,0 +1,79 @@
+name: "terrain_challenge"
+seed: 9999
+
+spawn_pose:
+  x: -8.0
+  y: 0.1
+  z: -8.0
+  yaw_deg: 45.0
+
+goal_coordinates:
+  x: 8.0
+  z: 8.0
+
+heightmap_path: "assets/terrain/gentle_hills.png"
+material_map_path: "assets/terrain/terrain_challenge_materials.png"
+floor_texture_map: "assets/terrain/terrain_challenge_diffuse.png"
+
+terrain_scale:
+  x: 30.0
+  y: 3.0
+  z: 30.0
+
+# Several obstacles scattered across varied terrain
+obstacles:
+  - type: box
+    x: -2.0
+    y: 0.5
+    z: -2.0
+    scale_x: 1.2
+    scale_y: 1.0
+    scale_z: 1.2
+
+  - type: cylinder
+    x: 1.5
+    y: 0.75
+    z: 1.5
+    scale_x: 0.5
+    scale_y: 1.5
+    scale_z: 0.5
+
+  - type: box
+    x: 4.0
+    y: 0.5
+    z: -4.0
+    scale_x: 2.0
+    scale_y: 1.0
+    scale_z: 0.5
+    rotation_deg: 30.0
+
+  - type: sphere
+    x: -5.0
+    y: 0.4
+    z: 3.0
+    scale_x: 0.8
+    scale_y: 0.8
+    scale_z: 0.8
+
+  - type: cylinder
+    x: 6.0
+    y: 0.75
+    z: 6.0
+    scale_x: 0.4
+    scale_y: 1.5
+    scale_z: 0.4
+
+# Noise config: elevated realism for terrain testing
+noise_config:
+  ultrasonic:
+    enabled: true
+    stddev: 0.04
+  ir:
+    enabled: true
+    prob: 0.06
+  imu:
+    enabled: true
+    drift_rate: 0.0015
+  odometry:
+    enabled: true
+    stddev: 0.008
