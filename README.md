@@ -30,7 +30,7 @@ control, modular sensors, and reinforcement learning integration.
 * Collision detection, watchdog timer
 * Prevents unsafe robot behavior
 
-⏳ **In Progress**: Full navigation stack, advanced noise modeling
+ 
 
 ## Quick Start
 
